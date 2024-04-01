@@ -4,8 +4,8 @@ Mini CPU in Logisim
 files to have
  -main final (edit at the end)
 
- -main A
+ -main B
    -components (Registers, IR ... )
 
- -main B
+ -main A
    -components (CU ALU ... )
