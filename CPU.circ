@@ -93,6 +93,21 @@
       <a name="output" val="true"/>
       <a name="width" val="4"/>
     </comp>
+    <comp lib="0" loc="(1960,540)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1960,560)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1960,580)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
     <comp lib="0" loc="(2010,700)" name="Splitter">
       <a name="appear" val="center"/>
       <a name="facing" val="north"/>
@@ -230,47 +245,47 @@
       <a name="appearance" val="logisim_evolution"/>
       <a name="trigger" val="falling"/>
     </comp>
-    <comp lib="8" loc="(1000,137)" name="Text">
+    <comp lib="8" loc="(1000,135)" name="Text">
       <a name="text" val="CONTROL UNIT"/>
     </comp>
-    <comp lib="8" loc="(1358,914)" name="Text">
+    <comp lib="8" loc="(1355,910)" name="Text">
       <a name="text" val="SIGN EXTEND"/>
     </comp>
-    <comp lib="8" loc="(1510,683)" name="Text">
+    <comp lib="8" loc="(1510,680)" name="Text">
       <a name="text" val="Contents Of Registers ^"/>
     </comp>
-    <comp lib="8" loc="(1597,653)" name="Text">
+    <comp lib="8" loc="(1595,650)" name="Text">
       <a name="font" val="SansSerif bold 31"/>
       <a name="text" val="^"/>
     </comp>
-    <comp lib="8" loc="(2034,832)" name="Text">
+    <comp lib="8" loc="(2030,830)" name="Text">
       <a name="text" val="-enable Set_Data"/>
     </comp>
-    <comp lib="8" loc="(2041,783)" name="Text">
+    <comp lib="8" loc="(2040,780)" name="Text">
       <a name="text" val="TO SET DATA RAM:"/>
     </comp>
-    <comp lib="8" loc="(205,638)" name="Text">
+    <comp lib="8" loc="(205,635)" name="Text">
       <a name="text" val="Program Area&gt;&gt;"/>
     </comp>
-    <comp lib="8" loc="(2082,855)" name="Text">
+    <comp lib="8" loc="(2080,855)" name="Text">
       <a name="text" val="-disable Set_Data IMPORTANT"/>
     </comp>
-    <comp lib="8" loc="(2109,809)" name="Text">
+    <comp lib="8" loc="(2105,805)" name="Text">
       <a name="text" val="-place values into A1_Set and A2_Set"/>
     </comp>
-    <comp lib="8" loc="(2370,624)" name="Text">
+    <comp lib="8" loc="(2370,620)" name="Text">
       <a name="text" val="Contents of ram^"/>
     </comp>
-    <comp lib="8" loc="(292,491)" name="Text">
+    <comp lib="8" loc="(290,490)" name="Text">
       <a name="text" val="Instructions For Programming:"/>
     </comp>
-    <comp lib="8" loc="(448,511)" name="Text">
+    <comp lib="8" loc="(445,510)" name="Text">
       <a name="text" val="Input program in each nibble in order. Flip flops will automatically update"/>
     </comp>
-    <comp lib="8" loc="(685,1099)" name="Text">
+    <comp lib="8" loc="(685,1095)" name="Text">
       <a name="text" val="Program Counter (LSB on Top)"/>
     </comp>
-    <comp lib="8" loc="(981,634)" name="Text">
+    <comp lib="8" loc="(980,630)" name="Text">
       <a name="text" val="Contents of IR"/>
     </comp>
     <comp loc="(1110,160)" name="CU_main"/>
@@ -889,7 +904,7 @@
     <comp lib="8" loc="(430,615)" name="Text">
       <a name="text" val="R2 / ram "/>
     </comp>
-    <comp lib="8" loc="(720,111)" name="Text">
+    <comp lib="8" loc="(720,110)" name="Text">
       <a name="text" val="Jump"/>
     </comp>
     <comp lib="8" loc="(745,1125)" name="Text">
