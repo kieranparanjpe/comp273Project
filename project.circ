@@ -108,6 +108,11 @@
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
     </comp>
+    <comp lib="0" loc="(1960,600)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </comp>
     <comp lib="0" loc="(2010,700)" name="Splitter">
       <a name="appear" val="center"/>
       <a name="facing" val="north"/>
@@ -276,14 +281,20 @@
     <comp lib="8" loc="(2370,620)" name="Text">
       <a name="text" val="Contents of ram^"/>
     </comp>
+    <comp lib="8" loc="(250,115)" name="Text">
+      <a name="text" val="Kieran Paranjpe, 261143256"/>
+    </comp>
     <comp lib="8" loc="(290,490)" name="Text">
       <a name="text" val="Instructions For Programming:"/>
     </comp>
-    <comp lib="8" loc="(307,448)" name="Text">
+    <comp lib="8" loc="(305,445)" name="Text">
       <a name="text" val="**0000 is reserved for jump"/>
     </comp>
     <comp lib="8" loc="(445,510)" name="Text">
       <a name="text" val="Input program in each nibble in order. Flip flops will automatically update"/>
+    </comp>
+    <comp lib="8" loc="(595,120)" name="Text">
+      <a name="text" val="Hussein Serageldin, 261143953"/>
     </comp>
     <comp lib="8" loc="(685,1095)" name="Text">
       <a name="text" val="Program Counter (LSB on Top)"/>
@@ -426,8 +437,8 @@
     <wire from="(1750,840)" to="(1800,840)"/>
     <wire from="(1800,670)" to="(1800,840)"/>
     <wire from="(190,1260)" to="(480,1260)"/>
-    <wire from="(1960,600)" to="(1970,600)"/>
-    <wire from="(1970,600)" to="(1970,720)"/>
+    <wire from="(1960,620)" to="(1970,620)"/>
+    <wire from="(1970,620)" to="(1970,720)"/>
     <wire from="(1970,720)" to="(2010,720)"/>
     <wire from="(1990,580)" to="(1990,680)"/>
     <wire from="(1990,580)" to="(2090,580)"/>
@@ -2598,6 +2609,30 @@
     <a name="circuit" val="ALU_REAL"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(1010,210)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Zero"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1010,310)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Negative"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1010,410)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="Overflow"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1010,510)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="SignOverflow"/>
+      <a name="output" val="true"/>
+    </comp>
     <comp lib="0" loc="(1090,730)" name="Splitter">
       <a name="appear" val="center"/>
       <a name="facing" val="west"/>
@@ -2629,29 +2664,27 @@
       <a name="appearance" val="NewPins"/>
       <a name="label" val="Add_Sub"/>
     </comp>
-    <comp lib="0" loc="(630,430)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Zero"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(630,450)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Negative"/>
-      <a name="output" val="true"/>
-    </comp>
-    <comp lib="0" loc="(630,470)" name="Pin">
-      <a name="appearance" val="NewPins"/>
-      <a name="facing" val="west"/>
-      <a name="label" val="Overflow"/>
-      <a name="output" val="true"/>
-    </comp>
     <comp lib="0" loc="(630,660)" name="Splitter">
       <a name="appear" val="center"/>
       <a name="facing" val="south"/>
       <a name="fanout" val="4"/>
       <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="4" loc="(900,200)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="4" loc="(900,300)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="4" loc="(900,400)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="trigger" val="falling"/>
+    </comp>
+    <comp lib="4" loc="(900,500)" name="D Flip-Flop">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="trigger" val="falling"/>
     </comp>
     <comp lib="4" loc="(900,660)" name="D Flip-Flop">
       <a name="appearance" val="logisim_evolution"/>
@@ -2682,25 +2715,46 @@
     <wire from="(1110,580)" to="(1130,580)"/>
     <wire from="(210,470)" to="(250,470)"/>
     <wire from="(250,1010)" to="(870,1010)"/>
-    <wire from="(250,470)" to="(250,1010)"/>
+    <wire from="(250,470)" to="(250,580)"/>
     <wire from="(250,470)" to="(410,470)"/>
+    <wire from="(250,580)" to="(250,1010)"/>
+    <wire from="(250,580)" to="(860,580)"/>
     <wire from="(610,680)" to="(610,770)"/>
     <wire from="(610,770)" to="(730,770)"/>
     <wire from="(620,680)" to="(620,750)"/>
     <wire from="(620,750)" to="(770,750)"/>
+    <wire from="(630,210)" to="(630,430)"/>
+    <wire from="(630,210)" to="(890,210)"/>
+    <wire from="(630,450)" to="(660,450)"/>
+    <wire from="(630,470)" to="(750,470)"/>
     <wire from="(630,490)" to="(630,660)"/>
     <wire from="(630,680)" to="(630,730)"/>
     <wire from="(630,730)" to="(810,730)"/>
     <wire from="(640,680)" to="(640,690)"/>
     <wire from="(640,690)" to="(730,690)"/>
+    <wire from="(660,310)" to="(660,450)"/>
+    <wire from="(660,310)" to="(890,310)"/>
     <wire from="(730,670)" to="(730,690)"/>
     <wire from="(730,670)" to="(890,670)"/>
     <wire from="(730,770)" to="(730,970)"/>
     <wire from="(730,970)" to="(890,970)"/>
+    <wire from="(750,410)" to="(750,470)"/>
+    <wire from="(750,410)" to="(810,410)"/>
     <wire from="(770,750)" to="(770,870)"/>
     <wire from="(770,870)" to="(890,870)"/>
+    <wire from="(810,410)" to="(810,510)"/>
+    <wire from="(810,410)" to="(890,410)"/>
+    <wire from="(810,510)" to="(890,510)"/>
     <wire from="(810,730)" to="(810,770)"/>
     <wire from="(810,770)" to="(890,770)"/>
+    <wire from="(860,250)" to="(860,350)"/>
+    <wire from="(860,250)" to="(890,250)"/>
+    <wire from="(860,350)" to="(860,450)"/>
+    <wire from="(860,350)" to="(890,350)"/>
+    <wire from="(860,450)" to="(860,550)"/>
+    <wire from="(860,450)" to="(890,450)"/>
+    <wire from="(860,550)" to="(860,580)"/>
+    <wire from="(860,550)" to="(890,550)"/>
     <wire from="(870,1010)" to="(890,1010)"/>
     <wire from="(870,710)" to="(870,810)"/>
     <wire from="(870,710)" to="(890,710)"/>
@@ -2708,6 +2762,10 @@
     <wire from="(870,810)" to="(890,810)"/>
     <wire from="(870,910)" to="(870,1010)"/>
     <wire from="(870,910)" to="(890,910)"/>
+    <wire from="(950,210)" to="(1010,210)"/>
+    <wire from="(950,310)" to="(1010,310)"/>
+    <wire from="(950,410)" to="(1010,410)"/>
+    <wire from="(950,510)" to="(1010,510)"/>
     <wire from="(950,670)" to="(1070,670)"/>
     <wire from="(950,770)" to="(1020,770)"/>
     <wire from="(950,870)" to="(1040,870)"/>
